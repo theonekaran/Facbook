@@ -14,6 +14,12 @@
 		0F3527621CEE81A90068D6C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3527601CEE81A90068D6C3 /* LaunchScreen.storyboard */; };
 		0F35276D1CEE81A90068D6C3 /* Lab_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35276C1CEE81A90068D6C3 /* Lab_1Tests.swift */; };
 		0F3527781CEE81AA0068D6C3 /* Lab_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527771CEE81AA0068D6C3 /* Lab_1UITests.swift */; };
+		0F3527861CEE8F0A0068D6C3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527851CEE8F0A0068D6C3 /* FeedViewController.swift */; };
+		0F35278C1CEE8FE40068D6C3 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527881CEE8FE40068D6C3 /* MessagesViewController.swift */; };
+		0F35278D1CEE8FE40068D6C3 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527891CEE8FE40068D6C3 /* MoreViewController.swift */; };
+		0F35278E1CEE8FE40068D6C3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35278A1CEE8FE40068D6C3 /* NotificationsViewController.swift */; };
+		0F35278F1CEE8FE40068D6C3 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35278B1CEE8FE40068D6C3 /* RequestsViewController.swift */; };
+		0F3527931CEEA6B30068D6C3 /* ThrillistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527921CEEA6B30068D6C3 /* ThrillistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		0F3527731CEE81AA0068D6C3 /* Lab 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3527771CEE81AA0068D6C3 /* Lab_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_1UITests.swift; sourceTree = "<group>"; };
 		0F3527791CEE81AA0068D6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3527851CEE8F0A0068D6C3 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0F3527881CEE8FE40068D6C3 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		0F3527891CEE8FE40068D6C3 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		0F35278A1CEE8FE40068D6C3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		0F35278B1CEE8FE40068D6C3 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		0F3527921CEEA6B30068D6C3 /* ThrillistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 				0F3527571CEE81A90068D6C3 /* AppDelegate.swift */,
 				0F3527591CEE81A90068D6C3 /* ViewController.swift */,
 				0F35275B1CEE81A90068D6C3 /* Main.storyboard */,
+				0F3527871CEE8F110068D6C3 /* ViewControllers */,
 				0F35275E1CEE81A90068D6C3 /* Assets.xcassets */,
 				0F3527601CEE81A90068D6C3 /* LaunchScreen.storyboard */,
 				0F3527631CEE81A90068D6C3 /* Info.plist */,
@@ -123,6 +136,19 @@
 				0F3527791CEE81AA0068D6C3 /* Info.plist */,
 			);
 			path = "Lab 1UITests";
+			sourceTree = "<group>";
+		};
+		0F3527871CEE8F110068D6C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F3527851CEE8F0A0068D6C3 /* FeedViewController.swift */,
+				0F3527881CEE8FE40068D6C3 /* MessagesViewController.swift */,
+				0F3527891CEE8FE40068D6C3 /* MoreViewController.swift */,
+				0F35278A1CEE8FE40068D6C3 /* NotificationsViewController.swift */,
+				0F35278B1CEE8FE40068D6C3 /* RequestsViewController.swift */,
+				0F3527921CEEA6B30068D6C3 /* ThrillistViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F35278F1CEE8FE40068D6C3 /* RequestsViewController.swift in Sources */,
+				0F35278D1CEE8FE40068D6C3 /* MoreViewController.swift in Sources */,
 				0F35275A1CEE81A90068D6C3 /* ViewController.swift in Sources */,
+				0F3527861CEE8F0A0068D6C3 /* FeedViewController.swift in Sources */,
+				0F35278E1CEE8FE40068D6C3 /* NotificationsViewController.swift in Sources */,
+				0F35278C1CEE8FE40068D6C3 /* MessagesViewController.swift in Sources */,
+				0F3527931CEEA6B30068D6C3 /* ThrillistViewController.swift in Sources */,
 				0F3527581CEE81A90068D6C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
