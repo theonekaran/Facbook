@@ -11,9 +11,14 @@ import UIKit
 class FeedViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var feedView: UIImageView!
+    var selectedImage: UIImageView!
+    var lightboxTransition: LightBoxTransition!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 1000)
+        scrollView.contentSize = feedView.image!.size
         scrollView.delegate = self
         // Do any additional setup after loading the view.
     }
@@ -23,27 +28,36 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        // This method is called as the user scrolls
-    }
-    
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        
-    }
-    
-    func scrollViewDidEndDragging(scrollView: UIScrollView,
-                                  willDecelerate decelerate: Bool) {
-        // This method is called right as the user lifts their finger
-    }
-    
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        // This method is called when the scrollview finally stops scrolling.
-    }
 
-    @IBOutlet weak var thrillistButton: UIButton!
-    @IBAction func thrillistOnClick(sender: AnyObject) {
+    
+    @IBAction func onTapPhoto(sender: UITapGestureRecognizer) {
+        
+        selectedImage = sender.view as! UIImageView
+        
+        performSegueWithIdentifier("feedToPhotoSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let destinationViewController = segue.destinationViewController as! PhotoViewController
+        
+        destinationViewController.image = self.selectedImage.image
+        
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        lightboxTransition = LightBoxTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = lightboxTransition
+        
+        // Adjust the transition duration. (seconds)
+        lightboxTransition.duration = 0.35
         
     }
+    
+    
 
     /*
     // MARK: - Navigation

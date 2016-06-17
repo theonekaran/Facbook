@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EE1294E0DCD7091B236CCF06933408327F35C0FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE1294E0DCD7091B236CCF06933408327F35C0FC" : 0,
+    "EEF5274BCFC34899057FBA7C714E2AEF14353C6F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C1A35F43-273F-465D-BD6B-8D33A1B58CE2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE1294E0DCD7091B236CCF06933408327F35C0FC" : "Lab%201\/",
+    "EEF5274BCFC34899057FBA7C714E2AEF14353C6F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lab 1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lab 1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theonekaran\/ioslab1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE1294E0DCD7091B236CCF06933408327F35C0FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theonekaran\/ioslab1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EEF5274BCFC34899057FBA7C714E2AEF14353C6F"
+    }
+  ]
+}

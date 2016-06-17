@@ -20,6 +20,10 @@
 		0F35278E1CEE8FE40068D6C3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35278A1CEE8FE40068D6C3 /* NotificationsViewController.swift */; };
 		0F35278F1CEE8FE40068D6C3 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35278B1CEE8FE40068D6C3 /* RequestsViewController.swift */; };
 		0F3527931CEEA6B30068D6C3 /* ThrillistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3527921CEEA6B30068D6C3 /* ThrillistViewController.swift */; };
+		0F71C5C71D1313CE0075383B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C5C61D1313CE0075383B /* PhotoViewController.swift */; };
+		0F71C5CA1D1344DB0075383B /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C5C81D1344DB0075383B /* BaseTransition.swift */; };
+		0F71C5CB1D1344DB0075383B /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C5C91D1344DB0075383B /* FadeTransition.swift */; };
+		0F71C5CD1D1347330075383B /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C5CC1D1347330075383B /* LightBoxTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		0F35278A1CEE8FE40068D6C3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		0F35278B1CEE8FE40068D6C3 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 		0F3527921CEEA6B30068D6C3 /* ThrillistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistViewController.swift; sourceTree = "<group>"; };
+		0F71C5C61D1313CE0075383B /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		0F71C5C81D1344DB0075383B /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		0F71C5C91D1344DB0075383B /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		0F71C5CC1D1347330075383B /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +117,13 @@
 		0F3527561CEE81A90068D6C3 /* Lab 1 */ = {
 			isa = PBXGroup;
 			children = (
+				0F71C5C81D1344DB0075383B /* BaseTransition.swift */,
+				0F71C5C91D1344DB0075383B /* FadeTransition.swift */,
 				0F3527571CEE81A90068D6C3 /* AppDelegate.swift */,
 				0F3527591CEE81A90068D6C3 /* ViewController.swift */,
 				0F35275B1CEE81A90068D6C3 /* Main.storyboard */,
+				0F71C5CC1D1347330075383B /* LightBoxTransition.swift */,
+				0F71C5C61D1313CE0075383B /* PhotoViewController.swift */,
 				0F3527871CEE8F110068D6C3 /* ViewControllers */,
 				0F35275E1CEE81A90068D6C3 /* Assets.xcassets */,
 				0F3527601CEE81A90068D6C3 /* LaunchScreen.storyboard */,
@@ -283,10 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F35278F1CEE8FE40068D6C3 /* RequestsViewController.swift in Sources */,
+				0F71C5CA1D1344DB0075383B /* BaseTransition.swift in Sources */,
 				0F35278D1CEE8FE40068D6C3 /* MoreViewController.swift in Sources */,
+				0F71C5CD1D1347330075383B /* LightBoxTransition.swift in Sources */,
 				0F35275A1CEE81A90068D6C3 /* ViewController.swift in Sources */,
 				0F3527861CEE8F0A0068D6C3 /* FeedViewController.swift in Sources */,
 				0F35278E1CEE8FE40068D6C3 /* NotificationsViewController.swift in Sources */,
+				0F71C5CB1D1344DB0075383B /* FadeTransition.swift in Sources */,
+				0F71C5C71D1313CE0075383B /* PhotoViewController.swift in Sources */,
 				0F35278C1CEE8FE40068D6C3 /* MessagesViewController.swift in Sources */,
 				0F3527931CEEA6B30068D6C3 /* ThrillistViewController.swift in Sources */,
 				0F3527581CEE81A90068D6C3 /* AppDelegate.swift in Sources */,
@@ -514,6 +530,7 @@
 				0F35277E1CEE81AA0068D6C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F35277F1CEE81AA0068D6C3 /* Build configuration list for PBXNativeTarget "Lab 1Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +539,7 @@
 				0F3527811CEE81AA0068D6C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F3527821CEE81AA0068D6C3 /* Build configuration list for PBXNativeTarget "Lab 1UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +548,7 @@
 				0F3527841CEE81AA0068D6C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
